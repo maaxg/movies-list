@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --green: #50b83c;
+  --black: #171717;
+  --black-surface: rgba(36, 36, 36, 0.25);
+  --background: #f9fafb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  display: grid;
+  row-gap: 6px;
+}
+
+h1 {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--black);
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: var(--black);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--black);
+}
+
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--black);
+}
+
+.paragraph-bold {
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--black);
+}
+
+.detail {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: var(--black);
+}
+
+.primary {
+  background-color: var(--green);
+}
+
+.secondary {
+  background-color: var(--black);
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
+.button {
+  padding: 8px 16px 8px 16px;
+  border-radius: 32px;
+  border-width: 0;
+  height: 40px;
+  width: 80px;
+}
+
+.button-label {
+  color: var(--white);
+}
+
+.button:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.051);
+}
+
+.button:disabled {
+  background-color: var(--black-surface);
+}
+
+.icon-button {
+  display: flex;
+  border-width: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 57px;
+  height: 28px;
+  width: 28px;
+}
+
+.icon-button:disabled {
+  background-color: var(--black-surface);
+}
+
+.icon {
+  padding-left: 38px;
+  background: url("/public/magnifying-glass.svg") no-repeat 8px center;
+  background-size: 20px;
+}
+
+.input {
+  border-top-width: 0;
+  border-radius: 8px;
+  border-color: var(--black-surface);
+  border-width: 1px;
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--black);
+  box-shadow: none;
+  width: 100%;
+  height: 40px;
+}
+
+.input:focus {
+  outline: none;
+  border-width: 1px;
+  border-color: var(--black-surface);
+  box-shadow: 8px 8px 8px rgba(190, 190, 190, 0.25);
+}
+
+.primary-shadow {
+  box-shadow: 0px -4px 50px 4px rgba(80, 184, 60, 0.2);
+}
+
+.secondary-shadow {
+  box-shadow: 0px -4px 50px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  display: flex;
+  min-width: 161px;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: var(--black-surface);
+  border-style: solid;
+  min-width: 199px;
+  min-height: 144px;
+  padding: 16px;
+}
+
+.card:hover {
+  box-shadow: 0px -4px 50px -15px rgba(0, 0, 0, 0.2);
+}
