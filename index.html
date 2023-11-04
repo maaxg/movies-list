@@ -9,94 +9,94 @@
   </head>
   <body>
     <main>
-      <h1>Hi there!</h1>
-      <p class="paragraph">
-        It’s that time of the year to choose your
-        <strong style="color: var(--green)">Shoppies</strong> nominations 🍿
-      </p>
-      <p class="paragraph">
-        Select your <strong>top 5</strong> movies of the year using the search
-        bar below, use the <strong>save</strong> button to save your choices
-      </p>
+      <section class="welcome-section">
+        <h1>Hi there!</h1>
+        <p class="paragraph">
+          It’s that time of the year to choose your
+          <strong style="color: var(--green)">Shoppies</strong> nominations 🍿
+        </p>
+        <p class="paragraph">
+          Select your <strong>top 5</strong> movies of the year using the search
+          bar below, use the <strong>save</strong> button to save your choices
+        </p>
 
-      <p class="detail">
-        All nominations will be saved when leaving this site.
-      </p>
-
-      <div class="card custom-card">
-        <p class="paragraph-bold">Movie title</p>
-        <input type="text" class="input icon" placeholder="search" />
-        <div class="align end">
-          <button class="button no-bg">
-            <p class="paragraph-bold button-label" style="color: var(--green)">
-              clear
-            </p>
-          </button>
-          <button class="button primary">
-            <p class="paragraph-bold button-label">save</p>
-          </button>
-        </div>
-      </div>
-
-      <div class="card custom-card">
-        <p class="paragraph-bold">Results for “search”</p>
-        <p class="detail">tap on a movie title to learn more about it</p>
-        <ul class="ul">
-          <li class="list-item">
-            <button class="icon-button primary">
-              <img src="/public/plus-icon.svg" />
-            </button>
-            <button>
-              <p class="paragraph">Item 1</p>
-            </button>
-          </li>
-          <li class="list-item">
-            <button class="icon-button primary">
-              <img src="/public/plus-icon.svg" />
-            </button>
-            <button>
-              <p class="paragraph">Item 2</p>
-            </button>
-          </li>
-          <li class="list-item">
-            <button class="icon-button primary">
-              <img src="/public/plus-icon.svg" />
-            </button>
-            <button>
-              <p class="paragraph">Item 2</p>
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div class="card custom-card">
-        <p class="paragraph-bold">Your nominations</p>
-        <p class="detail">tap a movie title to learn more about it</p>
-        <ul>
-          <li class="list-item">
-            <button class="icon-button secondary">
-              <img src="/public/cross-icon.svg" />
-            </button>
-            <button>
-              <p class="paragraph">Item 1</p>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <section class="banner primary primary-shadow">
-        <p class="paragraph-bold" style="color: var(--white)">
-          You’ve selected all your nominations!
+        <p class="detail">
+          All nominations will be saved when leaving this site.
         </p>
       </section>
 
-      <section class="align end">
-        <button class="button secondary">
+      <div class="card custom-card">
+        <form id="form">
+          <div>
+            <p class="paragraph-bold">Movie title</p>
+            <input
+              name="search"
+              type="text"
+              class="input icon"
+              placeholder="search"
+            />
+          </div>
+          <div class="align end">
+            <button class="button no-bg" type="reset">
+              <p
+                class="paragraph-bold button-label"
+                style="color: var(--green)"
+              >
+                clear
+              </p>
+            </button>
+            <button class="button primary" type="submit">
+              <p class="paragraph-bold button-label">search</p>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card custom-card" id="search-results">
+        <p class="paragraph-bold" id="results-for"></p>
+        <p class="detail">tap on a movie title to learn more about it</p>
+        <ul class="ul" id="ul"></ul>
+      </div>
+      <div class="card custom-card" id="nominations">
+        <p class="paragraph-bold">Your nominations</p>
+        <p class="detail">tap a movie title to learn more about it</p>
+        <ul class="ul" id="ul-nominations"></ul>
+      </div>
+
+      <div class="banner primary primary-shadow" id="all-nominations-banner">
+        <p class="paragraph-bold" style="color: var(--white)">
+          You’ve selected all your nominations!
+        </p>
+      </div>
+
+      <section class="align end" id="save-nominations">
+        <button class="button secondary" id="clear-nominations">
           <p class="paragraph-bold button-label">clear</p>
         </button>
-        <button class="button primary">
+        <button
+          class="button primary"
+          style="margin-left: 8px"
+          id="save-nominations-button"
+        >
           <p class="paragraph-bold button-label">save</p>
         </button>
       </section>
+
+      <div id="modal-movie-details" class="modal">
+        <div class="modal-content secondary-shadow">
+          <h1>Movie Details</h1>
+          <h2>Title</h2>
+          <p class="paragraph" id="movie-title"></p>
+          <h2>Plot</h2>
+          <p class="paragraph" id="movie-plot"></p>
+          <div class="align end">
+            <button class="button primary" id="close-modal">
+              <p class="paragraph-bold button-label">done</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
+  <script type="module" src="/src/main.ts"></script>
 </html>
