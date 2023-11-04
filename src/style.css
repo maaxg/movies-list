@@ -1,0 +1,27 @@
+main {
+  display: grid;
+  padding: 2rem 1rem 2rem 1rem;
+  row-gap: 16px;
+}
+
+.custom-card {
+  display: grid;
+  row-gap: 8px;
+}
+
+.align {
+  display: flex;
+}
+.end {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.list-item {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  align-items: center;
+  column-gap: 6px;
+}

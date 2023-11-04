@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/design-system.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Shopify Challenge - 2021</title>
+  </head>
+  <body>
+    <main>
+      <h1>Hi there!</h1>
+      <p class="paragraph">
+        It’s that time of the year to choose your
+        <strong style="color: var(--green)">Shoppies</strong> nominations 🍿
+      </p>
+      <p class="paragraph">
+        Select your <strong>top 5</strong> movies of the year using the search
+        bar below, use the <strong>save</strong> button to save your choices
+      </p>
+
+      <p class="detail">
+        All nominations will be saved when leaving this site.
+      </p>
+
+      <div class="card custom-card">
+        <p class="paragraph-bold">Movie title</p>
+        <input type="text" class="input icon" placeholder="search" />
+        <div class="align end">
+          <button class="button no-bg">
+            <p class="paragraph-bold button-label" style="color: var(--green)">
+              clear
+            </p>
+          </button>
+          <button class="button primary">
+            <p class="paragraph-bold button-label">save</p>
+          </button>
+        </div>
+      </div>
+
+      <div class="card custom-card">
+        <p class="paragraph-bold">Results for “search”</p>
+        <p class="detail">tap on a movie title to learn more about it</p>
+        <ul class="ul">
+          <li class="list-item">
+            <button class="icon-button primary">
+              <img src="/public/plus-icon.svg" />
+            </button>
+            <button>
+              <p class="paragraph">Item 1</p>
+            </button>
+          </li>
+          <li class="list-item">
+            <button class="icon-button primary">
+              <img src="/public/plus-icon.svg" />
+            </button>
+            <button>
+              <p class="paragraph">Item 2</p>
+            </button>
+          </li>
+          <li class="list-item">
+            <button class="icon-button primary">
+              <img src="/public/plus-icon.svg" />
+            </button>
+            <button>
+              <p class="paragraph">Item 2</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="card custom-card">
+        <p class="paragraph-bold">Your nominations</p>
+        <p class="detail">tap a movie title to learn more about it</p>
+        <ul>
+          <li class="list-item">
+            <button class="icon-button secondary">
+              <img src="/public/cross-icon.svg" />
+            </button>
+            <button>
+              <p class="paragraph">Item 1</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <section class="banner primary primary-shadow">
+        <p class="paragraph-bold" style="color: var(--white)">
+          You’ve selected all your nominations!
+        </p>
+      </section>
+
+      <section class="align end">
+        <button class="button secondary">
+          <p class="paragraph-bold button-label">clear</p>
+        </button>
+        <button class="button primary">
+          <p class="paragraph-bold button-label">save</p>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
