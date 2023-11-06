@@ -96,7 +96,7 @@ function onAddMovie(event: Event, movie: Movie) {
   ) as HTMLButtonElement;
 
   buttonRemove.classList.add("icon-button", "secondary");
-  buttonRemove.innerHTML = `<img src="/public/cross-icon.svg" />`;
+  buttonRemove.innerHTML = `<img src="../public/cross-icon.svg" />`;
 
   const buttonDetails: HTMLButtonElement = document.createElement(
     "button"
@@ -149,7 +149,7 @@ function showFoundedMovies(searchedValue: string) {
     title.classList.add("paragraph");
     buttonAdd.classList.add("icon-button", "primary");
 
-    buttonAdd.innerHTML = `<img src="/public/plus-icon.svg" />`;
+    buttonAdd.innerHTML = `<img src="../public/plus-icon.svg" />`;
     title.innerText = movie.title;
     buttonDetails.appendChild(title);
 
